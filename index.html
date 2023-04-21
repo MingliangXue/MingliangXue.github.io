@@ -1,64 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<meta charset="utf-8">
-	<title>薛明亮的主页</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>我是一个刚毕业的计算机专业博士生</title>
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<h1>欢迎来到我的主页！</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">关于我</a></li>
-				<li><a href="#education">教育背景</a></li>
-				<li><a href="#publications">论文发表</a></li>
-				<li><a href="#projects">项目经历</a></li>
-				<li><a href="#contact">联系我</a></li>
-			</ul>
-		</nav>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">我的主页</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#about">关于我</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#education">教育背景</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#publications">论文发表</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">项目经历</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">联系我</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="text-center py-5">
+		<div class="container">
+			<h1 class="display-4 fw-bold text-white mb-4">我是一个计算机专业的博士生，研究方向是信息可视化，主要研究的问题是图数据的可视化方法。</h1>
+			<p class="lead text-white mb-4">未来可能研究图计算、图神经网络等相关领域</p>
+			<a href="#about" class="btn btn-danger btn-lg">了解更多</a>
+		</div>
 	</header>
+
 	<main>
-		<section id="about">
-			<h2>关于我</h2>
-			<p>我是一个计算机专业的博士生，研究方向是信息可视化，主要研究的问题是图数据的可视化方法。</p>
+		<section id="about" class="py-5">
+			<div class="container">
+				<h2 class="fw-bold mb-5">关于我</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>我是一个计算机专业的博士生，研究方向是信息可视化，主要研究的问题是图数据的可视化方法。</p>
+						<p>我热爱编程，喜欢挑战新的技术难题，对于开源社区也有浓厚的兴趣。</p>
+					</div>
+					<div class="col-md-6">
+						<img src="img/about.jpg" alt="关于我" class="img-fluid rounded">
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="education">
-			<h2>教育背景</h2>
-			<ul>
-				<li>本科：山东大学，计算机科学与技术专业，2013-2017</li>
-				<li>硕博连读：山东大学，计算机科学与技术专业，2017-2023</li>
-			</ul>
+
+		<section id="education" class="py-5 bg-light">
+			<div class="container">
+				<h2 class="fw-bold mb-5">教育背景</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">本科</h5>
+								<p class="card-text">山东大学，计算机科学与技术专业，2013-2017</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">硕博连读</h5>
+								<p class="card-text">山东大学，计算机科学与技术专业，2017-2023</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="publications">
-			<h2>论文发表</h2>
-			<ul>
-				<li>Taurus: Towards A Unified Force Representation and Universal Solver for Graph Layout
-Mingliang Xue, Zhi Wang, Fahai Zhong, Yong Wang, Oliver Deussen, Yunhai Wang
-IEEE Transactions on Visualization and Computer Graphics (Proc. Vis 2022) , to appear</li>
-				<li>Target Netgrams: An Annulus-constrained Stress Model for Radial Graph Visualization
-Mingliang Xue, Yunhai Wang, Chang Han, Jian Zhang, Zheng Wang, Kaiyi Zhang, Christophe Hurter, Jian Zhao, and Oliver Deussen
-IEEE Transactions on Visualization and Computer Graphics , to appear</li>
-				<li>Interactive Structure-aware Blending of Diverse Edge Bundling Visualizations
-Yunhai Wang, Mingliang Xue, Yanyan Wang, Xinyuan Yan, Baoquan Chen, Chi-Wing Fu, Christophe Hurter
-IEEE Transactions on Visualization and Computer Graphics (Proc. InfoVis 2019) , 2020</li>
-			</ul>
+
+		<section id="publications" class="py-5">
+			<div class="container">
+				<h2 class="fw-bold mb-5">论文发表</h2>
+				<ul class="list-group">
+					<li class="list-group-item">Taurus: Towards A Unified Force Representation and Universal Solver for Graph Layout Mingliang Xue, Zhi Wang, Fahai Zhong, Yong Wang, Oliver Deussen, Yunhai Wang IEEE Transactions on Visualization and Computer Graphics (Proc. Vis 2022) , to appear</li>
+					<li class="list-group-item">Target Netgrams: An Annulus-constrained Stress Model for Radial Graph Visualization Mingliang Xue, Yunhai Wang, Chang Han, Jian Zhang, Zheng Wang, Kaiyi Zhang, Christophe Hurter, Jian Zhao, and Oliver Deussen IEEE Transactions on Visualization and Computer Graphics , to appear</li>
+					<li class="list-group-item">Interactive Structure-aware Blending of Diverse Edge Bundling Visualizations Yunhai Wang, Mingliang Xue, Yanyan Wang, Xinyuan Yan, Baoquan Chen, Chi-Wing Fu, Christophe Hurter IEEE Transactions on Visualization and Computer Graphics (Proc. InfoVis 2019) , 2020</li>
+				</ul>
+			</div>
 		</section>
-		<section id="projects">
-<!-- 			<h2>项目经历</h2>
-			<ul>
-				<li></li>
-				<li>项目2，公司B，2019-2020</li>
-				<li>项目3，公司C，2020-2021</li>
-			</ul> -->
+
+		<section id="projects" class="py-5 bg-light">
+			<div class="container">
+				<h2 class="fw-bold mb-5">项目经历</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">项目1</h5>
+								<p class="card-text">公司A，2018-2019</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-link me-2"></i>查看详情</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">项目2</h5>
+								<p class="card-text">公司B，2019-2020</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-link me-2"></i>查看详情</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">项目3</h5>
+								<p class="card-text">公司C，2020-2021</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-link me-2"></i>查看详情</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">项目4</h5>
+								<p class="card-text">公司D，2021-至今</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-link me-2"></i>查看详情</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="contact">
-			<h2>联系我</h2>
-			<p>邮箱：xml95007@gmail.com</p>
-<!-- 			<p>微信：Brighten1995</p> -->
+
+		<section id="contact" class="py-5">
+			<div class="container">
+				<h2 class="fw-bold mb-5">联系我</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>邮箱：xml95007@gmail.com</p>
+<!-- 						<p>微信：xxx</p> -->
+<!-- 						<p>电话：xxx-xxxxxxx</p> -->
+					</div>
+					<div class="col-md-6">
+						<form>
+							<div class="mb-3">
+								<label for="name" class="form-label">姓名</label>
+								<input type="text" class="form-control" id="name" placeholder="请输入您的姓名">
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">邮箱</label>
+								<input type="email" class="form-control" id="email" placeholder="请输入您的邮箱">
+							</div>
+							<div class="mb-3">
+								<label for="message" class="form-label">留言</label>
+								<textarea class="form-control" id="message" rows="5" placeholder="请输入您的留言"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>发送</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
-	<footer>
-		<p>版权所有 © 2023 薛明亮</p>
+
+	<footer class="bg-dark text-center py-3">
+		<div class="container">
+			<p class="text-white">版权所有 © 2021 我的主页</p>
+		</div>
 	</footer>
+
+	<script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
